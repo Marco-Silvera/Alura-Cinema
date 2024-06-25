@@ -4,6 +4,7 @@ import Container from '../../components/Container'
 import Footer from '../../components/Footer'
 import FavoritoProvider from '../../context/Favoritos'
 import { Outlet } from 'react-router-dom'
+import styles from './PaginaBase.module.css'
 
 function PaginaBase() {
     return (
