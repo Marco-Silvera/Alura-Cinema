@@ -1,12 +1,21 @@
+import Footer from "./components/Footer/index"
+import Cabecera from "./components/Cabecera/Cabecera"
+import Favoritos from "./pages/Favoritos";
 import { default as Inicio } from "./pages/Inicio/index";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Container from "./components/Container";
 
 function AppRoutes() {
     return (
         <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Inicio />}></Route>
-            </Routes>
+            <Cabecera />
+            <Container>
+                <Routes>
+                    <Route path="/" element={<Inicio />}></Route>
+                    <Route path="/favoritos" element={<Favoritos />} />
+                </Routes>
+            </Container>
+            <Footer />
         </BrowserRouter>
     )
 }

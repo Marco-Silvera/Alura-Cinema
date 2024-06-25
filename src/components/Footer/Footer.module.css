@@ -1,0 +1,16 @@
+.footer {
+    background-color: var(--negro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer h2 {
+    color: var(--blanco);
+    font-size: 20px;
+}
+
+h2 img {
+    width: 50px;
+}
